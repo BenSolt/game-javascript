@@ -2,6 +2,8 @@ import React from 'react';
 // import { useEffect, useState } from 'react';
 import './AppGame.css';
 
+
+
 function AppGame() {
 
     window.onload = function () {
@@ -14,8 +16,9 @@ function AppGame() {
         var ballRadius = 10;
         var x = canvas.width / 2;
         var y = canvas.height - 30; 
-        var dx = 2;
-        var dy = -2;
+    // --Ball movement--
+        var dx = 1;
+        var dy = -1;
 
         var paddleHeight = 10;
         var paddleWidth = 75;
@@ -145,10 +148,10 @@ function AppGame() {
             }
 
             if (rightPressed && paddleX < canvas.width - paddleWidth) {
-                paddleX += 7;
+                paddleX += 1;
             }
             else if (leftPressed && paddleX > 0) {
-                paddleX -= 7;
+                paddleX -= 1;
             }
 
             x += dx;
