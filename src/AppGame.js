@@ -27,8 +27,8 @@ function AppGame() {
         var rightPressed = false;
         var leftPressed = false;
 
-        var brickRowCount = 2; //3
-        var brickColumnCount = 1; //5
+        var brickRowCount = 3; //3
+        var brickColumnCount = 5; //5
         var brickWidth = 75;
         var brickHeight = 20;
         var brickPadding = 10;
